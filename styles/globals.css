@@ -8,8 +8,61 @@ a.special {
   background-color: #fff;
 }
 
+/*label {
+  color: blue;
+}
+
+input[type = "text"] {
+  font-size: 32px;
+}
+
+b {
+  position: absolute;
+  top: 300px;
+  right: 0px;
+  height: 100px;
+  color: red;
+  font-size: 10px;
+
+  display: block;
+}*/
 body #main-content {
   position: relative;
+}
+
+#forum-wrapper {
+  height: 100vh;
+}
+
+#subject {
+  color:darkorchid;
+}
+
+#message-container {
+  background-image: url("../../cours-mines-forum-2021/XenobladeChronicles.jpg");
+  overflow: auto;
+}
+
+#message-container2 {
+  background-image: url("../../cours-mines-forum-2021/portal_2_steam_update.jpg");
+  overflow:auto
+}
+
+#new-message-container {
+  height: 200px;
+  background-color: aliceblue;
+}
+
+#Username {
+  width: 300px;
+}
+
+#newSubject {
+  width: 300px;
+}
+
+#retour {
+  right: 0px;
 }
 
 body #main-content div.box > a,

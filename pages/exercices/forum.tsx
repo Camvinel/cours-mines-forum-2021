@@ -1,9 +1,46 @@
 import type { NextPage } from 'next'
+import MessageList from '../components/messageList'
 
-const Exercise4: NextPage = () => {
+const Forum: NextPage = () => {
   return (
-    <p>TODO: Créer le forum ici.</p>
+    <div>
+      <div id ="forum-wrapper" className = "d-flex flex-column">
+        <div id = "message-container" className = "flex-grow-1">
+          <div className = "container">
+            <ul className="nav nav-tabs">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="forum">Xenoblade Chronicles</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="forum2">Portal</a>
+              </li>
+              <li className = "nav-item" id = "retour">
+                <a className="nav-link active" aria-current="page" href="pageAccueil">Retour</a>
+              </li>
+            </ul>
+          </div>
+          <MessageList></MessageList>
+        </div>
+        <div id = "new-message-container">
+          <div className = "container">
+            <form method="post">
+              <div>
+                <input className="form-control" type="text" id="Username" name="Username" placeholder="Username" />
+              </div>
+
+              <div>
+                <textarea className="form-control" id="new-message" name="New-message" placeholder="Message" rows = {3}/>
+              </div>
+
+              <div className = "d-grid">
+                <button className ="btn btn-primary mb-2" type="submit">Envoyer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 
-export default Exercise4
+export default Forum
